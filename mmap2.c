@@ -42,7 +42,7 @@ int main(int argc, char **argv) {
     exit(0);
   }
   mapped_file = mmap(0, BUFSIZE, prot, flags, fd, 0);
-  printf(%p, mapped_file);
+  printf("%p", mapped_file);
   if((long)mapped_file == -1){
     printf("mmap returned error code %d\n", errno);
     exit(0);
